@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd6613eb04.js" crossorigin="anonymous"></script>
+    <title>jQuery Explorations</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="bg_img">
+        <img src="Images/pexels-nandhu-kumar-450441.jpg" alt="main_img">
+        <a class="reg_link" href="#reg_form">Register</a>
+        <div class="info-box">
+            <p>The notion of travelling solo can be a daunting one for the first-timer, raising a number of unsettling
+                questions: will I be safe? What route should I follow? Who will take photos of me staring off into the
+                distance atop scenic vantage points?
+            </p>
+            <p>A major factor in mastering the art of solo travel is selecting the right destination. Whether it be a
+                multi-country trip or a city break, some regions are more suited to the solo-travel experience than
+                others; but with a plethora of possibilities, it’s hard to know where to start.</p>
+        </div>
+    </div>
+    <div class="head_banner">
+        <h1>The Solo Traveler</h1>
+        <h3>Going it alone: top trips for solo travel</h3>
+    </div>
+
+    <div class="img-sliders">
+        <h1>Let's Travel!!</h1>
+        <div class="slider-out">
+            <button class="prev arrows"><i class="fas fa-arrow-left "></i></button>
+            <div class="slider-inner">
+                <img src="images/image1.jpg" class="active first-img" alt="">
+                <img src="images/image2.jpg" alt="">
+                <img src="images/image3.jpg" alt="">
+                <img src="images/image4.jpg" alt="">
+                <img src="images/image5.jpg" class="last-img" alt="">
+            </div>
+            <button class="next arrows"><i class="fas fa-arrow-right "></i></button>
+        </div>
+    </div>
+
+
+    <div class="wrapper" id="reg_form">
+        <p><b>Register New Account</b></p>
+        <div class="contact-form">
+            <div class="input-fields">
+                <div class="container"></div>
+                <form id="registration_form" style="text-align: center">
+                    <div class="form-box">
+                        <input placeholder="First Name" class="input" type="text" id="form_fname" name="" required="">
+                        <span class="error_form" id="fname_error_message"></span>
+                    </div>
+                    <div class="form-box">
+                        <input placeholder="Last Name" class="input" type="text" id="form_sname" name="" required="">
+                        <span class="error_form" id="sname_error_message"></span>
+                    </div>
+                    <div class="form-box">
+                        <input placeholder="Email Address" type="email" class="input" id="form_email" name=""
+                            required="">
+                        <span class="error_form" id="email_error_message"></span>
+                    </div>
+                    <div class="form-box">
+                        <input placeholder="Password" class="input" type="password" id="form_password" name=""
+                            required="">
+                        <span class="error_form" id="password_error_message"></span>
+                    </div>
+                    <div class="form-box">
+                        <input placeholder="Confirm Password" class="input" type="password" id="form_retype_password"
+                            name="" required="">
+                        <span class="error_form" id="retype_password_error_message"></span>
+                    </div>
+                    <input type="submit" value="Register" class="btn"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="topBtn"><i class="fas fa-chevron-up"></i></button>
+
+</body>
+
+</html>
